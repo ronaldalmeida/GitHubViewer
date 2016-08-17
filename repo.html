@@ -1,0 +1,23 @@
+<div>
+
+  Open Issues Count : {{repodetails.open_issues_count}}
+  <br>
+  <table border="0">
+    <thead>
+      <tr>
+        <th align="left" width='100px'>Contributors</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="contributors in contributordetails">
+      <tr>
+        <td>{{contributors.login}}
+          <br>
+          <a href="#/user/{{contributors.login}}">
+          <img ng-src="{{contributors.avatar_url}}" height='64px' width='64px'>
+          </a>        
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
